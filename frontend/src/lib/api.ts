@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Set your backend base URL here
-export const API_BASE = import.meta.env.VITE_API_BASE || import.meta.env.DEPLOYED_BASE || 'http://localhost:4000' || 'https://backend-highway.onrender.com';
+export const API_BASE = import.meta.env.DEPLOYED_BASE || import.meta.env.VITE_API_BASE || 'http://localhost:4000' || 'https://backend-highway.onrender.com';
 
 export const api = axios.create({ baseURL: API_BASE });
 
