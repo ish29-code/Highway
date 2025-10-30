@@ -45,7 +45,7 @@ export default function Details() {
               <button
                 key={d}
                 onClick={() => setDate(d)}
-                className={`px-3 py-1.5 rounded bg-gray-100 ${date === d ? 'bg-yellow text-gray-900 font-medium' : 'bg-yellow text-gray-900 font-medium'}`}
+                className={`px-3 py-1.5 rounded bg-gray-100 ${date === d ? 'bg-yellow text-gray-900 font-medium' : 'bg-gray-100 hover:bg-gray-200 text-gray-700'}`}
               >
                 {new Date(d).toLocaleDateString(undefined, { month: 'short', day: '2-digit' })}
               </button>
