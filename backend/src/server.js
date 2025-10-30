@@ -11,7 +11,7 @@ import promo from "./routes/promo.js";
 dotenv.config();
 const app = express();
 
-app.use(cors({ origin: process.env.CORS_ORIGIN?.split(",") || "*" }));
+app.use(cors({ origin: process.env.CORS_ORIGIN || process.env.Deployed_URL || "*" }));
 app.use(express.json());
 app.use(morgan("dev"));
 
