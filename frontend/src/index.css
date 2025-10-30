@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --container: 1100px; }
+.container-max { max-width: var(--container); margin-left: auto; margin-right: auto; }
+.btn-yellow { @apply bg-brand-yellow text-black px-4 py-2 rounded-lg shadow hover:opacity-90 transition; }
+.btn-black { @apply bg-black text-white px-4 py-2 rounded-lg shadow hover:opacity-90 transition; }
+.card { @apply bg-white rounded-xl shadow-card overflow-hidden; }
+.badge { @apply text-xs bg-brand-chip text-gray-700 rounded px-2 py-1; }
+.label { @apply text-sm text-brand-subtext; }
+.input { @apply w-full bg-gray-100 rounded-lg px-4 py-3 outline-none; }
+.link { @apply text-sm underline; }
