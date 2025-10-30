@@ -13,7 +13,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: (process.env.CORS_ORIGIN || process.env.Deployed_URL || "*")
+    origin: (process.env.CORS_ORIGIN || process.env.DEPLOYED_URL || "*")
       .split(",")
       .map((url) => url.trim()),
   })
