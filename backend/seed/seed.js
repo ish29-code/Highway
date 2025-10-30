@@ -58,6 +58,10 @@ async function run() {
   process.exit(0);
 }
 
+if (process.env.AUTO_SEED !== "true") {
+  console.log("⚠️ AUTO_SEED disabled. Skipping...");
+  process.exit(0);
+}
 run().catch((e) => {
   console.error(e);
   process.exit(1);
