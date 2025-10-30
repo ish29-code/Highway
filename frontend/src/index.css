@@ -11,3 +11,4 @@
 .label { @apply text-sm text-brand-subtext; }
 .input { @apply w-full bg-gray-100 rounded-lg px-4 py-3 outline-none; }
 .link { @apply text-sm underline; }
+.click { @apply cursor-pointer bg-brand-yellow}
